@@ -35,31 +35,3 @@ struct bst_node {
 ```
 
 Your BST should be organized *based on the keys* of the elements.  In other words, the BST property must always hold among all *keys* in the tree.  For example, when a new data element is inserted into your BST, decisions about whether to insert that element within a node's left subtree or its right subtree should be based on comparisons between the key of the element being inserted and the keys stored in the tree.  Similarly, when a user wants to lookup or remove data elements stored in your BST, they will do so by specifying the key to be found/removed.
-
-## Testing your work
-
-In addition to the skeleton code provided here, you are also provided with some application code in `test_bst.c` to help verify that your BST implementation, is behaving the way you want it to.  In particular, the testing code calls the functions from `bst.c`, passing them appropriate arguments, and then prints the results.  You can use the provided `Makefile` to compile all of the code in the project together, and then you can run the testing code as follows:
-```
-make
-./test_bst
-```
-Example output of the testing program using a correct BST implementation is provided in the `example_output/` directory.
-
-In order to verify that your memory freeing functions work correctly, it will be helpful to run the testing application through `valgrind`.
-
-## Submission
-
-As always, we'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom for this assignment. A good way to check whether your files are safely submitted is to look at the master branch of your assignment repo on the github.com website (i.e. https://github.com/osu-cs261-f19/assignment-3-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Grading criteria
-
-Your program **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-The assignment is worth 100 total points, broken down as follows:
-
-  * 10 points: `bst_create()` correctly allocates and initializes a BST
-  * 10 points: `bst_free()` correctly frees the memory allocated to a BST with no memory leaks
-  * 15 points: `bst_size()` correctly determines the number of elements in a BST
-  * 25 points: `bst_insert()` correctly inserts a key/value pair into a BST, maintaining the BST property with respect to all keys in the tree
-  * 25 points: `bst_remove()` correctly removes a key/value pair from a BST based on a specified key, maintaining the BST property with respect to all keys in the tree
-  * 15 points: `bst_get()` correctly retrieves the value associated with a given key in a BST
