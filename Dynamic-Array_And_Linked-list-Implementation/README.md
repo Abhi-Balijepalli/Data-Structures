@@ -88,32 +88,3 @@ make
 Example output of these two testing programs using correct implementations of the dynamic array and linked list is provided in the `example_output/` directory.
 
 In order to verify that your memory freeing functions work correctly, it will be helpful to run the testing application through `valgrind`.
-
-## Submission
-
-We'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom. A good way to check whether your files are safely submitted is to look at the master branch of your assignment repo on the github.com website (i.e. https://github.com/osu-cs261-f19/assignment-1-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Grading criteria
-
-Your program **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-The assignment is worth 100 total points, broken down as follows:
-
-  * 20 points: Signed up for Piazza
-
-  * 40 points: Correct dynamic array implementation
-    * 5 points: `dynarray_create()` correctly allocates and initializes a dynamic array
-    * 5 points: `dynarray_free()` correctly frees the memory allocated to a dynamic array
-    * 5 points: `dynarray_size()` returns the correct size of a dynamic array
-    * 10 points: `dynarray_insert()` correctly inserts a value into a dynamic array, resizing the array when appropriate
-    * 5 points: `dynarray_remove()` correctly removes a value from a dynamic array
-    * 5 points: `dynarray_get()` correctly returns a value from a dynamic array
-    * 5 points: `dynarray_set()` correctly updates a value in a dynamic array
-
-  * 40 points: Correct linked list implementation
-    * 5 points: `list_create()` correctly allocates and initializes a linked list
-    * 5 points: `list_free()` correctly frees the memory allocated to a linked list
-    * 5 points: `list_insert()` correctly inserts a value into a linked list
-    * 10 points: `list_remove()` correctly removes a value from a linked list
-    * 5 points: `list_position()` correctly returns the position of an element in a linked list
-    * 10 points: `list_reverse()` correctly reverses the order of the links in a linked list
