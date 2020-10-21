@@ -41,22 +41,3 @@ make
 Example output of the testing program using a correct PQ implementation is provided in the `example_output/` directory.
 
 In order to verify that your memory freeing functions work correctly, it will be helpful to run the testing application through `valgrind`.
-
-## Submission
-
-As always, we'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom for this assignment. A good way to check whether your files are safely submitted is to look at the master branch of your assignment repo on the github.com website (i.e. https://github.com/osu-cs261-f19/assignment-4-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Grading criteria
-
-To grade your work, the TAs will use the tests in both `test.c` and `unittest.c`.  Your programs **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on flip will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-The assignment is worth 100 total points, broken down as follows:
-
-  * 5 points: `struct pq` defines a heap-based priority queue
-  * 5 points: `pq_create()` correctly allocates and initializes a heap-based priority queue
-  * 5 points: `pq_free()` correctly frees all memory associated with a priority queue (no memory leaks!)
-  * 5 points: `pq_isempty()` correctly determines whether a priority queue contains any elements or not
-  * 10 points: `pq_first()` correctly returns the first value in a priority queue in O(1) runtime complexity
-  * 10 points: `pq_first_priority()` correctly returns priority value associated with the first element in a priority queue in O(1) runtime complexity
-  * 30 points: `pq_insert()` correctly inserts a value into a priority queue with the specified priority and restores the heap property as needed in O(log n) runtime complexity
-  * 30 points: `pq_remove_first()` correctly removes first element element from a priority queue and returns its value, restoring the heap property as needed in O(log n) runtime complexity
