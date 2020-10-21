@@ -66,30 +66,3 @@ Example output of these two testing programs using correct implementations of th
 
 In order to verify that your memory freeing functions work correctly, it will be helpful to run the testing applications through `valgrind`.
 
-## Submission
-
-We'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom. A good way to check whether your files are safely submitted is to look at the master branch of your assignment repo on the github.com website (i.e. https://github.com/osu-cs261-f19/assignment-2-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Grading criteria
-
-Your program **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-The assignment is worth 100 total points, broken down as follows:
-
-  * 50 points: Correctly implements a stack using a linked list as the underlying data storage
-    * 5 points: `stack_create()` correctly allocates and initializes a stack
-    * 5 points: `stack_free()` correctly frees the memory allocated to a stack with no memory leaks
-    * 5 points: `stack_isempty()` correctly determines whether a stack is empty
-    * 10 points: `stack_push()` correctly pushes a value onto a stack with O(1) average runtime complexity
-    * 5 points: `stack_top()` correctly returns the top value on a stack with O(1) average runtime complexity
-    * 10 points: `stack_pop()` correctly pops a value from a stack and returns it with O(1) average runtime complexity
-    * 10 points: the stack implementation correctly uses a linked list for its underlying data storage
-
-  * 50 points: Correctly implements a stack using a dynamic array as the underlying data storage
-    * 5 points: `queue_create()` correctly allocates and initializes a queue
-    * 5 points: `queue_free()` correctly frees the memory allocated to a queue with no memory leaks
-    * 5 points: `queue_isempty()` correctly determines whether a queue is empty
-    * 10 points: `queue_enqueue()` correctly enqueues a value into a queue with O(1) average runtime complexity
-    * 5 points: `queue_front()` correctly returns the front value from a queue with O(1) average runtime complexity
-    * 10 points: `queue_dequeue()` correctly dequeues a value from a queue and returns it with O(1) average runtime complexity
-    * 10 points: the queue implementation correctly uses a dynamic array for its underlying data storage
